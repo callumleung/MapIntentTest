@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MapIntentTest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="open_map">Directions</string>
+    <string name="seaton_burn_directions">Directions to Seaton Burns Services</string>
+    <string name="alnwick_directions">Directions to Alnwick Town Centre</string>
+    <string name="newton_aycliffe_directions">Directions to Newton Aycliffe</string>
+    <string name="thirsk_directions">Directions to Thirsk Town Centre</string>
+    <string name="whitby_directions">Directions to Whitby Town Centre</string>
+</resources>
