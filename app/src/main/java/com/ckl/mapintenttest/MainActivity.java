@@ -27,14 +27,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -87,14 +87,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
+        if (id == R.id.menuOption1) {
+            //creat intent and switch to activity
+            Intent myIntent = new Intent(this, OpenInGmaps.class);
+            startActivity(myIntent);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
@@ -119,51 +115,5 @@ public class MainActivity extends AppCompatActivity
                 "|Whitby Town Centre, Station Square, Whitby YO21 1DX");
     }
 
-    public void seatonBurnDirections(View view){
-       /* Uri gmmIntentUri = Uri.parse("geo:54.851597, -1.572178");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        if (mapIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(mapIntent);
-        }*/
-
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Seaton Burn Services, Fisher Lane, Newcastle upon Tyne NE13 6BP+to: Alnwick Town Centre, 19 Lagny Street, Alnwick, NE66 1LA ");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
-    }
-    public void alnwickTownDirections(View view){
-
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Alnwick Town Centre, 19 Lagny Street, Alnwick, NE66 1LA ");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
-
-    }
-    public void newtonAycliffeDirections(View view){
-
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Alnwick Town Centre, 19 Lagny Street, Alnwick, NE66 1LA");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
-
-    }
-    public void thirskTownDirections(View view){
-
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Alnwick Town Centre, 19 Lagny Street, Alnwick, NE66 1LA");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
-
-    }
-    public void whitbyTownDirections(View view){
-
-
-        Uri gmmIntentUri = Uri.parse("google.navigation:q=Alnwick Town Centre, 19 Lagny Street, Alnwick, NE66 1LA");
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-        mapIntent.setPackage("com.google.android.apps.maps");
-        startActivity(mapIntent);
-
-    }
 
 }

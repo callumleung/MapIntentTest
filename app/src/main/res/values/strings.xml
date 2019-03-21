@@ -12,4 +12,5 @@
     <string name="newton_aycliffe_directions">Directions to Newton Aycliffe</string>
     <string name="thirsk_directions">Directions to Thirsk Town Centre</string>
     <string name="whitby_directions">Directions to Whitby Town Centre</string>
+    <string name="open_in_maps">Open in Google Maps</string>
 </resources>
