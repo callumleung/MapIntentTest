@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        createMap();
+        //createMap();
 
     }
 
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void createMap(){
+ /*   public void createMap(){
         WebView webview = (WebView) findViewById(R.id.webview1);
         webview.setWebViewClient(new WebViewClient());
         webview.getSettings().setJavaScriptEnabled(true);
@@ -114,6 +114,6 @@ public class MainActivity extends AppCompatActivity
                 "|Thirsk Town Centre, 26 Market Place, Thirsk YO7 1LB" +
                 "|Whitby Town Centre, Station Square, Whitby YO21 1DX");
     }
-
+*/
 
 }
